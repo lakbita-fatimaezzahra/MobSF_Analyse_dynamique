@@ -89,7 +89,7 @@ Ouvrez votre navigateur : **http://127.0.0.1:8000**
 
 ---
 
-## 📦 Étape 5 — Télécharger l'APK DIVA
+##  Étape 5 — Télécharger l'APK DIVA
 
 **DIVA** (Damn Insecure and Vulnerable App) est l'application de test de référence : 13 challenges volontairement vulnérables.
 
