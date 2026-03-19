@@ -44,6 +44,7 @@ cd Mobile-Security-Framework-MobSF
 scripts\start_avd.ps1 MobSF_DIVA_API_30
 ```
 
+<img width="1112" height="344" alt="image" src="https://github.com/user-attachments/assets/2848af1c-5c74-4e5e-9799-677cd669da44" />
 
 
 ### Vérification ADB
