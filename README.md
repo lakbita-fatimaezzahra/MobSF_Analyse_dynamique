@@ -65,7 +65,8 @@ L'émulateur doit rester en fonctionnement. Dans un nouveau terminal :
 docker pull opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-![Uploading image.png…]()
+<img width="1216" height="434" alt="image" src="https://github.com/user-attachments/assets/88dcf990-efdb-44a3-9f7a-ac689dc4c90c" />
+
 
 
 Puis lancez le conteneur (remplacez `emulator-5554` par votre identifiant) :
