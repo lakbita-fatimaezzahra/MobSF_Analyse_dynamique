@@ -65,11 +65,10 @@ L'émulateur doit rester en fonctionnement. Dans un nouveau terminal :
 docker pull opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-<img width="1216" height="434" alt="image" src="https://github.com/user-attachments/assets/88dcf990-efdb-44a3-9f7a-ac689dc4c90c" />
+<img width="1129" height="493" alt="image" src="https://github.com/user-attachments/assets/03e46145-af9e-44f4-abd9-07c3e7afbeba" />
 
 
-
-Puis lancez le conteneur (remplacez `emulator-5554` par votre identifiant) :
+Puis lancez le conteneur :
 
 ```bash
 docker run -it --rm \
@@ -77,17 +76,21 @@ docker run -it --rm \
   -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 \
   opensecurity/mobile-security-framework-mobsf:latest
 ```
+<img width="1814" height="552" alt="image" src="https://github.com/user-attachments/assets/8ee8220b-730b-4402-abf0-a8980f851da9" />
 
-Ouvrez votre navigateur : **http://127.0.0.1:8000**
+Ouvrir le navigateur : **http://127.0.0.1:8000**
 
-| Champ | Valeur |
-|-------|--------|
-| Login | `mobsf` |
-| Mot de passe | `mobsf` |
+ Login : `mobsf` 
+ 
+ Mot de passe:| `mobsf` 
+ 
+ 
+<img width="1912" height="733" alt="image" src="https://github.com/user-attachments/assets/c8182ecb-1c4e-45e0-ac42-0f3e6929f80d" />
+
 
 > ** Ordre obligatoire :** L'émulateur doit être lancé **avant** MobSF, sinon la connexion ADB échoue.
 
----
+
 
 ##  Étape 5 — Télécharger l'APK DIVA
 
@@ -98,14 +101,16 @@ Ouvrez votre navigateur : **http://127.0.0.1:8000**
 
 Téléchargez `diva-beta.apk` et gardez-le sur votre bureau.
 
----
+
 
 ##  Étape 6 — Analyse Statique + Dynamique
 
 ### Analyse Statique
 
 1. Dans MobSF → **Upload & Analyze** → sélectionnez `diva.apk`
-2. Attendez la fin de l'analyse 
+2. Attendez la fin de l'analyse
+3. 
+<img width="1428" height="741" alt="image" src="https://github.com/user-attachments/assets/bd61e975-9a40-416b-a3a9-8583a826d829" />
 
 Le rapport inclut :
 - Manifest Android (permissions, composants exposés)
@@ -113,11 +118,22 @@ Le rapport inclut :
 - Détection de secrets hardcodés
 - Score de sécurité global
 
+<img width="1913" height="844" alt="image" src="https://github.com/user-attachments/assets/69e731ac-2da3-4697-8df0-8aa2b1955de8" />
+
 ### Analyse Dynamique
 
 1. Dans le rapport → cliquez **Dynamic Analysis**
 2. MobSF installe DIVA, déploie Frida Server et configure le proxy HTTPS
+
+   <img width="1896" height="892" alt="image" src="https://github.com/user-attachments/assets/cb31edd9-88c0-4b65-b91e-7cf57ee6a425" />
+
+   <img width="1909" height="884" alt="image" src="https://github.com/user-attachments/assets/77477f20-0079-4481-b1fa-88e2c0970ca5" />
+
+
 3. Sur l'émulateur, lancez **DIVA** et explorez les challenges
+
+   <img width="1862" height="950" alt="image" src="https://github.com/user-attachments/assets/cd4d65be-efaf-41aa-81ba-106712519f8a" />
+
 
 | Module | Rôle |
 |--------|------|
@@ -143,7 +159,7 @@ Le rapport inclut :
 
 ---
 
-## 📤 Export des résultats
+## Export des résultats
 
 Depuis MobSF → **Generate Report** (en bas du rapport) :
 
@@ -177,23 +193,7 @@ docker run -it --rm -p 8000:8000 \
   opensecurity/mobile-security-framework-mobsf:latest
 ```
 
----
 
-##  Structure du dépôt
 
-```
-.
-├── README.md
-└── screenshots/
-    ├── avd_manager.png       # AVD Manager — sélection de l'image système
-    ├── git_clone.png         # Terminal — git clone MobSF
-    ├── start_avd.png         # Terminal — démarrage du script start_avd
-    ├── adb_devices.png       # Terminal — adb devices
-    └── docker_pull.png       # Terminal — docker pull MobSF
-```
-
-> **💡 Pour utiliser les images :** placez vos captures dans un dossier `screenshots/` à la racine du dépôt avec les noms indiqués ci-dessus.
-
----
 
 *Lab réalisé dans le cadre du module Sécurité Mobile — 4CIR*
