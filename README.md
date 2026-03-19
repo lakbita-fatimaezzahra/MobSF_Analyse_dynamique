@@ -56,7 +56,7 @@ adb devices
 <img width="777" height="119" alt="image" src="https://github.com/user-attachments/assets/6200a8ed-ac1f-4501-88ee-abe03de74c91" />
 
 
-##  Étape 4 — Déployer MobSF via Docker (5 min)
+##  Étape 4 — Déployer MobSF via Docker 
 
 L'émulateur doit rester en fonctionnement. Dans un nouveau terminal :
 
@@ -103,7 +103,7 @@ Téléchargez `diva-beta.apk` et gardez-le sur votre bureau.
 ### Analyse Statique
 
 1. Dans MobSF → **Upload & Analyze** → sélectionnez `diva.apk`
-2. Attendez la fin de l'analyse (1–2 min)
+2. Attendez la fin de l'analyse 
 
 Le rapport inclut :
 - Manifest Android (permissions, composants exposés)
