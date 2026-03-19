@@ -100,7 +100,7 @@ Téléchargez `diva-beta.apk` et gardez-le sur votre bureau.
 
 ---
 
-## 🔍 Étape 6 — Analyse Statique + Dynamique
+##  Étape 6 — Analyse Statique + Dynamique
 
 ### Analyse Statique
 
@@ -129,7 +129,7 @@ Le rapport inclut :
 
 ---
 
-## 🎯 Challenges DIVA
+##  Challenges DIVA
 
 | # | Challenge | Vulnérabilité OWASP Mobile |
 |---|-----------|---------------------------|
@@ -153,7 +153,7 @@ Depuis MobSF → **Generate Report** (en bas du rapport) :
 
 ---
 
-## 📌 Récapitulatif des commandes
+##  Récapitulatif des commandes
 
 ```bash
 # Cloner MobSF
@@ -179,7 +179,7 @@ docker run -it --rm -p 8000:8000 \
 
 ---
 
-## 📁 Structure du dépôt
+##  Structure du dépôt
 
 ```
 .
