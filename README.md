@@ -11,7 +11,7 @@
 - Conduire une **analyse dynamique** (Frida, interception SSL, logs runtime)
 - Identifier des vulnérabilités OWASP Mobile sur l'application **DIVA**
 
-##  Étape 1 — Création de l'émulateur AVD (10 min)
+##  Étape 1 — Création de l'émulateur AVD 
 
 1. Ouvrez **Android Studio** → `Tools` → `AVD Manager` → `Create Virtual Device`
 2. Choisissez un modèle : **Pixel 5** ou **Pixel 6**
