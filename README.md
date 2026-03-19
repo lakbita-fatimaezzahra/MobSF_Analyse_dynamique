@@ -1,4 +1,4 @@
-# MobSF_Analyse_dynamique
+<img width="1908" height="934" alt="image" src="https://github.com/user-attachments/assets/9a6f636e-af61-4ae1-b1ea-a4197a992e69" /># MobSF_Analyse_dynamique
 
 #  Lab — Analyse de Sécurité Mobile Android
 ### MobSF + DIVA : Analyse Statique & Dynamique
@@ -143,31 +143,12 @@ Le rapport inclut :
 | File Monitor | Fichiers créés / modifiés par l'app |
 | Intent Monitor | Intents émis et reçus |
 
----
+<img width="1918" height="858" alt="image" src="https://github.com/user-attachments/assets/9a9e7ba4-b2de-4000-9e9f-7e576b832e44" />
 
-##  Challenges DIVA
+Logs Logcat en temps réel
 
-| # | Challenge | Vulnérabilité OWASP Mobile |
-|---|-----------|---------------------------|
-| 1 | Insecure Logging | M9 — Données en clair dans Logcat |
-| 2 | Hardcoded Credentials | M9 — Secrets dans le code source |
-| 3–4 | Insecure Data Storage | M9 — Fichiers / SharedPrefs non chiffrés |
-| 5 | Input Validation | M4 — Injection SQL |
-| 6–8 | Access Control | M1 — Intents non protégés |
-| 9 | Insecure Network | M5 — Trafic HTTP non chiffré |
-| 10 | Binary Protections | M7 — Absence d'obfuscation |
+<img width="1908" height="934" alt="image" src="https://github.com/user-attachments/assets/65242457-fa00-4149-9193-83a1adae56de" />
 
----
-
-## Export des résultats
-
-Depuis MobSF → **Generate Report** (en bas du rapport) :
-
-- **PDF** — rapport statique + dynamique consolidés
-- **JSON** — données brutes pour intégration SIEM
-- **HTML** — visualisation directe dans le navigateur
-
----
 
 ##  Récapitulatif des commandes
 
